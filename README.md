@@ -11,5 +11,9 @@ If you get the word right, press Got It. If you're stuck, press Skip. The game r
 - Use  LiveData to auto update Layout via Data Binding
 - Use a Tranformations.map to convert the Current Time into a Formatted String
 - Adding Sounds
+- Make app open in full screen
 
 ### Screenshots
+![Screenshot1](screenshots/guess-it-screenshot-1.png) 
+![Screenshot2](screenshots/guess-it-screenshot-2.png)
+![Screenshot3](screenshots/guess-it-screenshot-3.png)
