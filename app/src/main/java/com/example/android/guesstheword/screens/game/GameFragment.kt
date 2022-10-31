@@ -109,17 +109,4 @@ class GameFragment : Fragment() {
         val action = GameFragmentDirections.actionGameToScore(viewModel.score.value ?: 0)
         findNavController(this).navigate(action)
     }
-
-    private fun buzz(pattern: LongArray) {
-        val buzzer = activity?.getSystemService<Vibrator>()
-        buzzer?.let {
-            // Vibrate for 500 milliseconds
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                buzzer.vibrate(VibrationEffect.createWaveform(pattern, -1))
-            } else {
-                //deprecated in API 26
-                buzzer.vibrate(pattern, -1)
-            }
-        }
-    }
 }
